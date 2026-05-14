@@ -109,7 +109,7 @@
   
   <h3>Resultados Pre-computados</h3>
   <p class="info-box" style="font-size:0.88rem;">
-    <strong>Nota:</strong> Los valores siguientes fueron pre-calculados por el Math Agent y están <strong>hardcodeados</strong> en esta aplicación. Puedes verificar cualquier valor en tiempo real usando el botón <em>Recalcular</em>.
+    <strong>Nota:</strong> Los valores siguientes fueron calculados previamente mediante los algoritmos de Lagrange y Neville y están <strong>hardcodeados</strong> en esta aplicación. Puedes verificar cualquier valor en tiempo real usando el botón <em>Recalcular</em>.
   </p>
   <table>
     <thead><tr><th>Año</th><th>Valor (10 dec)</th><th>Redondeado (5 dec)</th><th>Acción</th></tr></thead>
@@ -299,11 +299,16 @@
   <ol style="margin-left:1.25rem;">
     <li>Descargue o copie el archivo <code>algoritmo_interpolacion.py</code> en cualquier carpeta.</li>
     <li>Abra una terminal (símbolo del sistema, terminal de Linux/Mac, o PowerShell).</li>
-    <li>Navegue hasta la carpeta donde guardó el archivo.</li>
-    <li>Ejecute el siguiente comando:
-      <pre style="margin:0.5rem 0;"><code>python algoritmo_interpolacion.py</code></pre>
+    <li>Navegue hasta la carpeta donde guardó el archivo:
+      <pre style="margin:0.5rem 0;"><code>cd ruta/a/la/carpeta</code></pre>
     </li>
-    <li>El script detectará automáticamente si <code>numpy</code> o <code>pandas</code> no están instalados y los instalará por usted usando <code>pip</code>.</li>
+    <li>Ejecute el script. Intente primero con:
+      <pre style="margin:0.5rem 0;"><code>python algoritmo_interpolacion.py</code></pre>
+      Si el comando anterior no funciona, pruebe con:
+      <pre style="margin:0.5rem 0;"><code>python3 algoritmo_interpolacion.py</code></pre>
+      <p style="margin-top:0.5rem;color:#666;font-size:0.85rem;"><strong>¿No tiene Python instalado?</strong> Descárguelo gratuitamente desde <a href="https://www.python.org/downloads/" target="_blank" style="color:#2563eb;">python.org</a> (Windows/Mac) o use el gestor de paquetes de su distribución Linux (ej. <code>sudo apt install python3</code> en Ubuntu/Debian).</p>
+    </li>
+    <li>El script detectará automáticamente si <code>numpy</code> o <code>pandas</code> no están instalados. En ese caso, creará un <strong>entorno virtual</strong> local (<code>.interp_venv/</code>) e instalará las dependencias por usted. No afectará su sistema.</li>
     <li>El reporte completo se imprimirá en la consola, incluyendo:
       <ul style="margin-left:1.25rem;margin-top:0.25rem;">
         <li>Datos conocidos (25 puntos).</li>
