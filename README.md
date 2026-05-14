@@ -105,6 +105,10 @@ The script will:
 ```
 Interpolation-Lab/
 ├── README.md                 # This file
+├── informe.tex               # LaTeX source for the formal report
+├── informe.pdf               # Compiled PDF report
+├── compilar.sh               # Linux/Mac compilation script
+├── compilar.bat              # Windows compilation script
 ├── interpolacion.html        # Self-contained HTML application
 ├── algoritmo_interpolacion.py # Python script with auto-install
 └── .gitignore                # Excludes .interp_venv/
@@ -121,6 +125,35 @@ Interpolation-Lab/
 - ✅ Create interactive data visualization
 - ✅ Build self-contained deliverable (single HTML file)
 - ✅ Document algorithmic decisions
+
+---
+
+## 👨‍🏫 For the Professor: How to Access This Project
+
+This repository contains three independent ways to review the project. **No installation is required** for the HTML version.
+
+### Option 1: Interactive HTML (Recommended — Zero Install)
+1. Visit the repository: `https://github.com/DereKk8/Interpolation-Lab`
+2. Click on `interpolacion.html`
+3. Click the **"Raw"** button
+4. Press `Ctrl+S` (or `Cmd+S` on Mac) to save the file
+5. Double-click the saved file — it opens in any browser, no internet needed
+
+### Option 2: Python Script
+1. Download `algoritmo_interpolacion.py`
+2. Open a terminal in the same folder
+3. Run:
+   ```bash
+   python algoritmo_interpolacion.py
+   # If the above doesn't work, try:
+   python3 algoritmo_interpolacion.py
+   ```
+4. The script auto-installs dependencies if missing (creates local virtual environment)
+
+### Option 3: LaTeX Report
+1. Download `informe.tex`
+2. Run `compilar.sh` (Linux/Mac) or `compilar.bat` (Windows) — requires a TeX distribution
+3. Or use Overleaf: upload `informe.tex` and compile with pdfLaTeX
 
 ---
 
